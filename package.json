@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/tussutryllirinn/StringCalculator/issues"
   },
-  "homepage": "https://github.com/tussutryllirinn/StringCalculator#readme"
+  "homepage": "https://github.com/tussutryllirinn/StringCalculator#readme",
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
 }
