@@ -3,7 +3,7 @@
 const add = require("./calculator");
 
 it("should return zero on an emty string", () => {
-    expect("").toBe(0);
+    expect(add("")).toBe(0);
 });
 
 it("should return number when only one number is in the string", () => {
