@@ -1,0 +1,22 @@
+{
+  "name": "stringcalculator",
+  "version": "1.0.0",
+  "description": "test driven development",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tussutryllirinn/StringCalculator.git"
+  },
+  "keywords": [
+    "hani"
+  ],
+  "author": "Arnar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tussutryllirinn/StringCalculator/issues"
+  },
+  "homepage": "https://github.com/tussutryllirinn/StringCalculator#readme"
+}
