@@ -12,3 +12,7 @@ it("should return number when only one number is in the string", () => {
 it("should return sum of two given numbers", () => {
     expect(add("1,2")).toBe(3);
 });
+it("should return sum of n given numbers", () => {
+    expect(add("1,2,3,4,5,6")).toBe(21);
+});
+
