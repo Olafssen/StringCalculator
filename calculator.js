@@ -22,7 +22,10 @@ function add(number){
         var total = 0 ;
         var numberArray = number.split(/[,\n;]/);
         for(var i = 0; i < numberArray.length; i++){
+           //If the number is larger than 1000 it ignores it.
+            if(parseInt(numberArray[i]) < 1000){
                 total += parseInt(numberArray[i]);
+            }
         }   
         return total; 
     }

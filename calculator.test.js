@@ -42,3 +42,9 @@ it("should throw when there is multiple negative numbers with positive numbers i
         add("-2, -3,2, -5, -2,5,2");
     }).toThrow();
 });
+it("should return sum of n given numbers, even with \n and ignoring 1000", () => {
+    expect(add("1,2,3,4\n5,6,1000")).toBe(21);
+});
+it("should return sum of n given numbers, even with \n and ignoring all numbers over 1000", () => {
+    expect(add("1,192382,2,1093713,1092,3,4\n5,6,1000")).toBe(21);
+});
