@@ -19,18 +19,27 @@ function add(number){
     //Adds the numbers together and returns the total
     if(number.includes(",") | number.includes("\n"))
     {
-        var total = 0 ;
-        var numberArray = number.split(/[,\n;]/);
+        var total = 0;
+        //Custom made delimeter 
+        if(number.startsWith("//")){
+            var delimeter = number.substring(2,3);
+            number = number.replace(new RegExp(delimeter, 'g'), ",");//replaces the original number array with
+        }                                                             // new one replacing all delimeters with
+                                                                      // with ","
+
+        var numberArray = number.split(/[,\n]/);
+        
         for(var i = 0; i < numberArray.length; i++){
            //If the number is larger than 1000 it ignores it.
             if(parseInt(numberArray[i]) < 1000){
                 total += parseInt(numberArray[i]);
             }
-        }   
+        }
         return total; 
     }
-
+    
     return parseInt(number);
+
 }
 
 module.exports = add;

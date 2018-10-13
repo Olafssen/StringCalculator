@@ -48,3 +48,9 @@ it("should return sum of n given numbers, even with \n and ignoring 1000", () =>
 it("should return sum of n given numbers, even with \n and ignoring all numbers over 1000", () => {
     expect(add("1,192382,2,1093713,1092,3,4\n5,6,1000")).toBe(21);
 });
+it("should return sum of n given numbers, even with \n and with a custom made delimeter ';'", () => {
+    expect(add("//;1,192382;2,1093713;1092,3;4\n5,6,1000")).toBe(21);
+});
+it("should return sum of n given numbers, even with \n and with a custom made delimeter 'p'", () => {
+    expect(add("//p1,192382p2,1093713p1092,3,4\n5,6,1000")).toBe(21);
+});
