@@ -27,3 +27,18 @@ it("should return sum of 6 given numbers", () => {
 it("should return sum of n given numbers, even with \n", () => {
     expect(add("1,2,3,4\n5,6")).toBe(21);
 });
+it("should throw when there is one negative number", () => {
+    expect(() =>{
+        add("-2");
+    }).toThrow();
+});
+it("should throw when there is multiple negative numbers", () => {
+    expect(() =>{
+        add("-2, -3, -5, -2");
+    }).toThrow();
+});
+it("should throw when there is multiple negative numbers with positive numbers in the mix", () => {
+    expect(() =>{
+        add("-2, -3,2, -5, -2,5,2");
+    }).toThrow();
+});
